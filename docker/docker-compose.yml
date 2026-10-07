@@ -1,0 +1,12 @@
+# Run from the project root:
+#   docker compose -f docker/docker-compose.yml up --build
+services:
+  elnino-story:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: elnino-story:latest
+    container_name: elnino-story
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

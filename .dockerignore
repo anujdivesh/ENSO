@@ -1,0 +1,15 @@
+# Keep the Docker build context small (see docker/Dockerfile).
+node_modules
+.next
+out
+build
+.git
+.gitignore
+.vscode
+.idea
+*.log
+npm-debug.log*
+.DS_Store
+.env*
+docker/*.md
+*.tmp.mjs

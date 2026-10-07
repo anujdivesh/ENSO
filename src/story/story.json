@@ -1,0 +1,160 @@
+{
+  "title": "El Niño in the Pacific - Tracker",
+  "subtitle": "Explore how El Niño is affecting Pacific Island ocean conditions, and what lies ahead.",
+  "defaultCamera": {
+    "center": [-170, 0],
+    "zoom": 2
+  },
+  "stories": [
+    {
+      "id": "current",
+      "title": "ENSO – Current Conditions",
+      "description": "How El Niño is shaping the Pacific right now: sea temperature, sea level, coral heat stress, marine heatwaves and chlorophyll.",
+      "chapters": [
+        {
+          "id": "status",
+          "layout": "center",
+          "title": "ENSO Current status",
+          "body": [
+            "Summary of the current El Niño–Southern Oscillation status, as at {previousMonth}."
+          ],
+          "gauge": {
+            "category": "elNino",
+            "label": "El Niño"
+          },
+          "layers": []
+        },
+        {
+          "id": "monthly-sst",
+          "title": "Monthly sea surface temperature anomalies",
+          "body": [
+            "Anomalies show how much warmer (red) or cooler (blue) the ocean is than its long-term average for that month. During El Niño, a band of warm anomalies stretches along the equator east of the dateline.",
+            "Use the month controls to step back through past events."
+          ],
+          "layers": ["sst-anomaly-monthly"],
+          "times": {
+            "sst-anomaly-monthly": "-10y"
+          }
+        },
+        {
+          "id": "sea-level",
+          "title": "Monthly sea level anomalies",
+          "body": [
+            "Sea level anomalies show how much higher (orange) or lower (purple) the sea surface is than normal, in millimetres. During El Niño, sea levels typically fall in the western Pacific and rise in the east."
+          ],
+          "layers": ["sea-level-anomaly-monthly"],
+          "times": {
+            "sea-level-anomaly-monthly": "-10y"
+          }
+        },
+        {
+          "id": "coral-bleaching",
+          "title": "Coral bleaching alerts",
+          "body": [
+            "Bleaching alerts show reef heat stress from no stress (light blue) to Alert Level 2 (dark red), where severe bleaching and coral death are likely. During El Niño, reefs in the central and eastern Pacific usually see the most bleaching."
+          ],
+          "layers": ["coral-bleaching-monthly"],
+          "times": {
+            "coral-bleaching-monthly": "-10y"
+          }
+        },
+        {
+          "id": "marine-heatwaves",
+          "title": "Marine heatwaves",
+          "body": [
+            "Marine heatwaves are periods of unusually warm ocean temperatures. Categories run from moderate (yellow) to beyond extreme (dark red), and light blue means no heatwave. During El Niño, marine heatwaves are most common in the central and eastern Pacific."
+          ],
+          "layers": ["marine-heatwave-daily"],
+          "times": {
+            "marine-heatwave-daily": "-6m"
+          }
+        },
+        {
+          "id": "chlorophyll",
+          "title": "Chlorophyll",
+          "body": [
+            "Chlorophyll-a concentration shows where phytoplankton are growing, a sign of nutrient-rich water. During El Niño, productivity drops in the central and eastern Pacific, affecting fisheries across the region."
+          ],
+          "layers": ["chlorophyll-monthly"],
+          "times": {
+            "chlorophyll-monthly": "-10y"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outlook",
+      "title": "ENSO – Outlook",
+      "description": "What the coming months may bring for the Pacific, starting with where tuna are likely to be found.",
+      "chapters": [
+        {
+          "id": "outlook-status",
+          "layout": "center",
+          "title": "ENSO Outlook",
+          "body": [],
+          "gauge": {
+            "scale": "outlook",
+            "category": "elNino",
+            "label": "El Niño"
+          },
+          "layers": []
+        },
+        {
+          "id": "seasonal-sst",
+          "title": "Seasonal sea surface temperature outlook",
+          "body": [
+            "The Bureau of Meteorology's ACCESS-S2 model forecasts how much warmer (red) or cooler (blue) than normal the ocean is likely to be over the coming months."
+          ],
+          "layers": ["seasonal-sst-outlook"],
+          "times": {
+            "seasonal-sst-outlook": "first"
+          }
+        },
+        {
+          "id": "seasonal-ssh",
+          "title": "Seasonal sea level outlook",
+          "body": [
+            "ACCESS-S2 also forecasts sea level: orange shows where the sea surface is likely to be higher than normal over the coming seasons, purple where it is likely to be lower."
+          ],
+          "layers": ["seasonal-ssh-outlook"],
+          "times": {
+            "seasonal-ssh-outlook": "first"
+          }
+        },
+        {
+          "id": "coral-bleaching-outlook",
+          "title": "Coral bleaching outlook",
+          "body": [
+            "NOAA Coral Reef Watch forecasts the heat stress coral reefs are likely to face over the next four months, from no stress (light blue) to Alert Level 2 (dark red)."
+          ],
+          "layers": ["coral-bleaching-outlook"],
+          "times": {
+            "coral-bleaching-outlook": "first"
+          }
+        },
+        {
+          "id": "rainfall-outlook",
+          "title": "Rainfall outlook",
+          "body": [
+            "ACCESS-S2 forecasts how much wetter (teal) or drier (brown) than normal each of the coming months is likely to be, in millimetres."
+          ],
+          "layers": ["rainfall-outlook"],
+          "times": {
+            "rainfall-outlook": "first"
+          }
+        },
+        {
+          "id": "fisheries",
+          "title": "Fisheries Convergence Zone",
+          "body": [
+            "Skipjack tuna gather along the edge of the Pacific warm pool, roughly where the sea surface is 29 °C (purple). Comparing it with its usual position (green) shows how El Niño shifts tuna fishing grounds east."
+          ],
+          "layers": ["fisheries-monthly"],
+          "times": {
+            "fisheries-monthly": "-4m"
+          }
+        }
+      ]
+    }
+  ]
+}
